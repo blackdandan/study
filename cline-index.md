@@ -9,6 +9,9 @@ Java集合学习笔记
 ├── Java集合-Collections工具类.md
 ├── Java集合使用的排序方法.md
 ├── Collection和AbstractCollection.md
+├── Java-List.md
+├── AbstractList.md
+├── AbstractSequentialList.md
 └── Android View绘制机制.md
 ```
 
@@ -21,4 +24,7 @@ Java集合学习笔记
 - **Java集合-Collections工具类.md**: Collections工具类使用指南
 - **Java集合使用的排序方法.md**: 集合排序方法详解
 - **Collection和AbstractCollection.md**: Collection接口和AbstractCollection类详解
+- **Java-List.md**: List接口及其实现类详解
+- **AbstractList.md**: AbstractList抽象类详解
+- **AbstractSequentialList.md**: AbstractSequentialList抽象类详解
 - **Android View绘制机制.md**: Android视图绘制原理及优化
