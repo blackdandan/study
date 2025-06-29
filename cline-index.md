@@ -12,7 +12,8 @@ Java集合学习笔记
 ├── Java-List.md
 ├── AbstractList.md
 ├── AbstractSequentialList.md
-└── Android View绘制机制.md
+├── Android View绘制机制.md
+└── Activity生命周期.md
 ```
 
 ## 文件说明
@@ -28,3 +29,4 @@ Java集合学习笔记
 - **AbstractList.md**: AbstractList抽象类详解
 - **AbstractSequentialList.md**: AbstractSequentialList抽象类详解
 - **Android View绘制机制.md**: Android视图绘制原理及优化
+- **Activity生命周期.md**: Activity生命周期及启动模式详解
