@@ -13,7 +13,10 @@ Java集合学习笔记
 ├── AbstractList.md
 ├── AbstractSequentialList.md
 ├── Android View绘制机制.md
-└── Activity生命周期.md
+├── Activity生命周期.md
+├── Android-Service详解.md
+├── Android-AIDL详解.md
+└── Android-BroadcastReceiver详解.md
 ```
 
 ## 文件说明
@@ -30,3 +33,6 @@ Java集合学习笔记
 - **AbstractSequentialList.md**: AbstractSequentialList抽象类详解
 - **Android View绘制机制.md**: Android视图绘制原理及优化
 - **Activity生命周期.md**: Activity生命周期及启动模式详解
+- **Android-Service详解.md**: Android Service组件、进程通信及实践问题详解
+- **Android-AIDL详解.md**: Android AIDL跨进程通信机制详解
+- **Android-BroadcastReceiver详解.md**: Android广播接收器详解(动态/静态注册及LocalBroadcastManager)
