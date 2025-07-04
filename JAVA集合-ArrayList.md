@@ -47,6 +47,73 @@ private static final int DEFAULT_CAPACITY = 10;
 | size() | O(1) | 返回元素数量 |
 | trimToSize() | O(n) | 缩减数组容量到实际大小 |
 
+### 方法实现代码
+
+#### add(int index, E e) 实现
+```java
+public void add(int index, E element) {
+    rangeCheckForAdd(index);  // 检查索引是否合法
+    modCount++;  // 修改计数器递增
+    final int s;
+    Object[] elementData;
+    if ((s = size) == (elementData = this.elementData).length)
+        elementData = grow();  // 扩容检查
+    System.arraycopy(elementData, index, 
+                    elementData, index + 1,
+                    s - index);  // 移动元素
+    elementData[index] = element;  // 插入新元素
+    size = s + 1;
+}
+```
+
+#### remove(int index) 实现
+```java
+public E remove(int index) {
+    Objects.checkIndex(index, size);  // 索引检查
+    modCount++;  // 修改计数器递增
+    E oldValue = elementData(index);  // 获取要删除的元素
+    int numMoved = size - index - 1;
+    if (numMoved > 0)
+        System.arraycopy(elementData, index+1, 
+                       elementData, index,
+                       numMoved);  // 移动元素
+    elementData[--size] = null;  // 清空引用，帮助GC
+    return oldValue;
+}
+```
+
+#### remove(Object o) 实现
+```java
+public boolean remove(Object o) {
+    if (o == null) {
+        for (int index = 0; index < size; index++) {
+            if (elementData[index] == null) {
+                fastRemove(index);  // 快速删除null元素
+                return true;
+            }
+        }
+    } else {
+        for (int index = 0; index < size; index++) {
+            if (o.equals(elementData[index])) {
+                fastRemove(index);  // 快速删除非null元素
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+private void fastRemove(int index) {
+    modCount++;
+    int numMoved = size - index - 1;
+    if (numMoved > 0)
+        System.arraycopy(elementData, index+1, 
+                       elementData, index,
+                       numMoved);
+    elementData[--size] = null;
+}
+```
+
 ## 5. 性能分析
 
 - **优点**：
