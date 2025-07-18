@@ -21,8 +21,10 @@
 │   ├── Java集合-Collections工具类.md # Collections工具类使用指南
 │   ├── Java集合使用的排序方法.md # 集合排序方法详解
 │   └── Java集合框架.md          # Java集合框架整体介绍
-└── Kotlin基础/
-    └── coroutine-completable-deferred.md # Kotlin协程中CompletableDeferred分析
+├── Kotlin基础/
+│   └── coroutine-completable-deferred.md # Kotlin协程中CompletableDeferred分析
+└── 开源框架学习/
+    └── dataStore.md             # Android DataStore存储框架详解
 ```
 
 ## 文件说明
@@ -44,3 +46,4 @@
 - **Java学习/Java集合使用的排序方法.md**: 集合排序方法详解
 - **Java学习/Java集合框架.md**: Java集合框架整体介绍
 - **Kotlin基础/coroutine-completable-deferred.md**: Kotlin协程中CompletableDeferred分析
+- **开源框架学习/dataStore.md**: Android DataStore存储框架详解
