@@ -4,6 +4,7 @@
 .
 ├── Android基础/
 │   ├── Activity生命周期.md       # Android Activity生命周期详解
+│   ├── ActivityManagerService-startup-process.md # AMS启动流程详解
 │   ├── Android View绘制机制.md   # Android视图绘制原理及优化
 │   ├── Android-BroadcastReceiver详解.md  # Android广播机制详解
 │   ├── ContentProvider详解.md   # ContentProvider数据库和多进程访问机制
@@ -37,6 +38,7 @@
 - **Android基础/ContentProvider详解.md**: ContentProvider数据库和多进程访问机制
 - **Android基础/自定义ViewGroup事件分发.md**: ViewGroup事件分发机制详解
 - **Android基础/View重绘机制.md**: invalidate与requestLayout详解
+- **Android基础/ActivityManagerService-startup-process.md**: AMS启动流程详解
 - **binder学习/传统IPC通信方式详解.md**: Android中Socket、共享内存、管道等IPC机制
 - **binder学习/Android-AIDL详解.md**: Android AIDL跨进程通信详解
 - **binder学习/Android-Binder原理详解.md**: Android Binder IPC机制原理
