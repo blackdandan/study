@@ -5,8 +5,6 @@
 ├── Android基础/
 │   ├── Activity生命周期.md       # Android Activity生命周期详解
 │   ├── ActivityManagerService-startup-process.md # AMS启动流程详解
-│   ├── Activity启动过程详解.md    # Activity启动流程及原理详解
-│   ├── 启动优化详解.md            # 冷热启动优化、SplashScreen处理、任务调度方案
 │   ├── Android View绘制机制.md   # Android视图绘制原理及优化
 │   ├── Android-BroadcastReceiver详解.md  # Android广播机制详解
 │   ├── ContentProvider详解.md   # ContentProvider数据库和多进程访问机制
@@ -32,13 +30,13 @@
 │   └── coroutine-completable-deferred.md # Kotlin协程中CompletableDeferred分析
 └── 开源框架学习/
     └── dataStore.md             # Android DataStore存储框架详解
+└── 其他知识/
+    └── image-format-memory-comparison.md # PNG与JPG格式内存占用对比分析
 ```
 
 ## 文件说明
 
 - **Android基础/Activity生命周期.md**: Android Activity生命周期详解
-- **Android基础/Activity启动过程详解.md**: Activity启动流程及原理详解
-- **Android基础/启动优化详解.md**: 冷热启动优化、SplashScreen处理、任务调度方案
 - **Android基础/Android View绘制机制.md**: Android视图绘制原理及优化
 - **Android基础/Android-BroadcastReceiver详解.md**: Android广播机制详解
 - **Android基础/ContentProvider详解.md**: ContentProvider数据库和多进程访问机制
